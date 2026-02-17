@@ -1,20 +1,20 @@
 export default function Reviews() {
   return (
-    <section id="reviews" className="py-24">
-      <div className="max-w-[1440px] mx-auto px-8 text-center">
+    <section id="reviews" className="py-12 sm:py-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 text-center">
         <span className="inline-block text-sm font-medium text-gold border border-gold/30 rounded-full px-4 py-1 mb-6">
           REVIEWS
         </span>
-        <h2 className="text-[44px] font-semibold mb-4">
+        <h2 className="text-2xl sm:text-[36px] lg:text-[44px] font-semibold mb-4">
           Real Traders. Real Results.
         </h2>
-        <p className="text-base text-gray-mid max-w-[454px] mx-auto mb-16">
+        <p className="text-sm sm:text-base text-gray-mid max-w-[454px] mx-auto mb-8 sm:mb-16">
           Thousands of traders worldwide already rely on Vision FX to trade with more clarity and confidence.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-16">
           {[1, 2, 3].map((i) => (
-            <div key={i} className="bg-card border border-border rounded-2xl p-8 text-left">
+            <div key={i} className="bg-card border border-border rounded-2xl p-5 sm:p-8 text-left">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, j) => (
                   <svg key={j} className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">

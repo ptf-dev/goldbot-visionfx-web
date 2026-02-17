@@ -14,10 +14,10 @@ export default function FAQs() {
   const [open, setOpen] = useState<number | null>(1);
 
   return (
-    <section id="faqs" className="py-24">
-      <div className="max-w-[1440px] mx-auto px-8 flex flex-col lg:flex-row gap-16">
+    <section id="faqs" className="py-12 sm:py-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 flex flex-col lg:flex-row gap-8 lg:gap-16">
         <div className="lg:w-[441px] shrink-0">
-          <h2 className="text-[44px] font-semibold leading-tight mb-4">
+          <h2 className="text-2xl sm:text-[36px] lg:text-[44px] font-semibold leading-tight mb-4">
             Frequently<br />Asked Questions?
           </h2>
           <p className="text-base text-gray-mid mb-8">

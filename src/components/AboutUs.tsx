@@ -1,7 +1,7 @@
 export default function AboutUs() {
   return (
-    <section className="py-24">
-      <div className="max-w-[1440px] mx-auto px-8">
+    <section className="py-12 sm:py-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
         <div className="relative bg-card border border-border rounded-3xl overflow-hidden mb-8">
           <img src="/images/about-us.png" alt="Vision FX" className="w-full" />
         </div>

@@ -6,7 +6,7 @@ const RippleGrid = dynamic(() => import("./RippleGrid"), { ssr: false });
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden min-h-[90vh] flex items-center">
+    <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden min-h-[80vh] sm:min-h-[90vh] flex items-center">
       <div className="absolute inset-0">
         <RippleGrid
           gridColor="#c9a84c"
@@ -23,9 +23,9 @@ export default function Hero() {
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />
 
-      <div className="relative max-w-[1440px] mx-auto px-8 flex flex-col lg:flex-row items-center gap-16 w-full">
+      <div className="relative max-w-[1440px] mx-auto px-4 sm:px-8 flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
         <div className="flex-1 max-w-[562px]">
-          <div className="flex items-center gap-3 mb-8 animate-fade-up">
+          <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8 animate-fade-up flex-wrap">
             <span className="text-sm font-medium text-gray-light">Excellent</span>
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
@@ -38,21 +38,21 @@ export default function Hero() {
             <span className="text-sm font-medium text-gray-light">5-Star Reviews</span>
           </div>
 
-          <h1 className="text-[52px] font-bold leading-tight mb-3 animate-fade-up-delay-1">
+          <h1 className="text-3xl sm:text-[42px] lg:text-[52px] font-bold leading-tight mb-3 animate-fade-up-delay-1">
             <span className="shimmer-text">Trusted Since 2016.</span>
           </h1>
-          <h2 className="text-[28px] font-bold leading-snug mb-6 text-gray-light animate-fade-up-delay-2">
+          <h2 className="text-lg sm:text-2xl lg:text-[28px] font-bold leading-snug mb-4 sm:mb-6 text-gray-light animate-fade-up-delay-2">
             Learn the day trading system that has generated $256K in payouts.
           </h2>
-          <p className="text-base text-gray-mid leading-relaxed mb-10 max-w-[562px] animate-fade-up-delay-3">
+          <p className="text-sm sm:text-base text-gray-mid leading-relaxed mb-8 sm:mb-10 max-w-[562px] animate-fade-up-delay-3">
             Vision FX is a professional trading platform with over 5 years of experience in the financial markets. Join like-minded individuals who follow elite trading signals to create life-changing profits.
           </p>
 
-          <div className="flex items-center gap-4 animate-fade-up-delay-4">
-            <a href="#enroll" className="gold-gradient text-black font-medium text-base px-8 py-3.5 rounded-full hover:opacity-90 transition-all hover:scale-105 shadow-[0_0_30px_rgba(201,168,76,0.3)]">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 animate-fade-up-delay-4">
+            <a href="#enroll" className="gold-gradient text-black font-medium text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-full hover:opacity-90 transition-all hover:scale-105 shadow-[0_0_30px_rgba(201,168,76,0.3)] text-center">
               Enroll Now
             </a>
-            <a href="#telegram" className="border border-border text-white font-medium text-base px-8 py-3.5 rounded-full hover:bg-white/5 transition-all hover:scale-105">
+            <a href="#telegram" className="border border-border text-white font-medium text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-full hover:bg-white/5 transition-all hover:scale-105 text-center">
               Join Telegram
             </a>
           </div>

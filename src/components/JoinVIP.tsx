@@ -9,10 +9,10 @@ export default function JoinVIP() {
   ];
 
   return (
-    <section id="features" className="py-24">
-      <div className="max-w-[1440px] mx-auto px-8 flex flex-col lg:flex-row gap-16 items-center">
+    <section id="features" className="py-12 sm:py-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
         <div className="flex-1">
-          <h2 className="text-4xl font-bold mb-10">Join Vision FX VIP</h2>
+          <h2 className="text-2xl sm:text-4xl font-bold mb-6 sm:mb-10">Join Vision FX VIP</h2>
           <div className="space-y-5 mb-10">
             {features.map((f) => (
               <div key={f} className="flex items-center gap-3">
@@ -27,7 +27,7 @@ export default function JoinVIP() {
             Enroll Now
           </a>
         </div>
-        <div className="flex-1 max-w-[500px] aspect-square rounded-3xl bg-card border border-border flex items-center justify-center">
+        <div className="flex-1 max-w-[500px] w-full aspect-video sm:aspect-square rounded-3xl bg-card border border-border flex items-center justify-center">
           <img src="/images/hero-image.png" alt="Trading platform" className="w-4/5 rounded-2xl" />
         </div>
       </div>
