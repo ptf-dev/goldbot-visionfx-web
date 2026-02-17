@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="absolute inset-0 opacity-10">
         <img src="/images/footer-bg.png" alt="" className="w-full h-full object-cover" />
       </div>
-      <div className="max-w-[1200px] mx-auto px-8 text-center">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-8 text-center">
         <h2 className="text-[54px] font-bold leading-tight mb-4">
           Ready to<br />Change Your Life?
         </h2>

@@ -1,8 +1,29 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
+const PixelBlast = dynamic(() => import("./PixelBlast"), { ssr: false });
+
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden">
-      <div className="absolute inset-0 grid-pattern" />
-      <div className="relative max-w-[1440px] mx-auto px-8 flex flex-col lg:flex-row items-center gap-12">
+    <section className="relative pt-32 pb-20 overflow-hidden min-h-[90vh] flex items-center">
+      <div className="absolute inset-0">
+        <PixelBlast
+          color="#c9a84c"
+          pixelSize={4}
+          patternScale={3}
+          patternDensity={0.8}
+          speed={0.3}
+          edgeFade={0.4}
+          enableRipples={true}
+          rippleSpeed={0.4}
+          rippleThickness={0.12}
+          rippleIntensityScale={1.2}
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />
+
+      <div className="relative max-w-[1440px] mx-auto px-8 flex flex-col lg:flex-row items-center gap-16 w-full">
         <div className="flex-1 max-w-[562px]">
           <div className="flex items-center gap-3 mb-8">
             <span className="text-sm font-medium text-gray-light">Excellent</span>
@@ -14,11 +35,11 @@ export default function Hero() {
               ))}
             </div>
             <span className="text-base font-semibold">1200+</span>
-            <span className="text-sm font-medium text-gray-light">5 Stars Reviews</span>
+            <span className="text-sm font-medium text-gray-light">5-Star Reviews</span>
           </div>
 
-          <h1 className="text-[44px] font-bold leading-tight mb-2">
-            Vision FX is since 2016.
+          <h1 className="text-[48px] font-bold leading-tight mb-3">
+            Trusted Since 2016.
           </h1>
           <h2 className="text-[30px] font-bold leading-snug mb-6 text-gray-light">
             Learn the day trading system that has generated $256K in payouts.
@@ -28,17 +49,17 @@ export default function Hero() {
           </p>
 
           <div className="flex items-center gap-4">
-            <a href="#enroll" className="gold-gradient text-black font-medium text-base px-8 py-3 rounded-full hover:opacity-90 transition-opacity">
+            <a href="#enroll" className="gold-gradient text-black font-medium text-base px-8 py-3.5 rounded-full hover:opacity-90 transition-all hover:scale-105">
               Enroll Now
             </a>
-            <a href="#telegram" className="border border-border text-white font-medium text-base px-8 py-3 rounded-full hover:bg-white/5 transition-colors">
+            <a href="#telegram" className="border border-border text-white font-medium text-base px-8 py-3.5 rounded-full hover:bg-white/5 transition-all hover:scale-105">
               Join Telegram
             </a>
           </div>
         </div>
 
         <div className="flex-1 relative max-w-[600px] w-full">
-          <img src="/images/hero-image.png" alt="Trading dashboard" className="w-full h-auto rounded-2xl" />
+          <img src="/images/hero-image.png" alt="Trading dashboard" className="w-full h-auto rounded-2xl relative z-10" />
         </div>
       </div>
     </section>

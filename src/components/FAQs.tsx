@@ -24,7 +24,7 @@ export default function FAQs() {
             Something left unanswered? Check out the full FAQs.
           </p>
           <a href="#" className="inline-block border border-border text-white text-base px-6 py-4 rounded-full hover:bg-white/5 transition-colors">
-            Read All Faqs
+            Read All FAQs
           </a>
         </div>
         <div className="flex-1 space-y-3">
