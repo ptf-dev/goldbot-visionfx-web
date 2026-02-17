@@ -2,23 +2,23 @@
 
 import dynamic from "next/dynamic";
 
-const PixelBlast = dynamic(() => import("./PixelBlast"), { ssr: false });
+const RippleGrid = dynamic(() => import("./RippleGrid"), { ssr: false });
 
 export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 overflow-hidden min-h-[90vh] flex items-center">
       <div className="absolute inset-0">
-        <PixelBlast
-          color="#c9a84c"
-          pixelSize={4}
-          patternScale={3}
-          patternDensity={0.8}
-          speed={0.3}
-          edgeFade={0.4}
-          enableRipples={true}
-          rippleSpeed={0.4}
-          rippleThickness={0.12}
-          rippleIntensityScale={1.2}
+        <RippleGrid
+          gridColor="#c9a84c"
+          rippleIntensity={0.05}
+          gridSize={10}
+          gridThickness={15}
+          fadeDistance={1.5}
+          vignetteStrength={2}
+          glowIntensity={0.1}
+          opacity={1}
+          mouseInteraction={true}
+          mouseInteractionRadius={1}
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />
