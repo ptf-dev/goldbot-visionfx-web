@@ -2,23 +2,22 @@
 
 import dynamic from "next/dynamic";
 
-const RippleGrid = dynamic(() => import("./RippleGrid"), { ssr: false });
+const DotGrid = dynamic(() => import("./DotGrid"), { ssr: false });
 
 export default function Hero() {
   return (
     <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden min-h-[80vh] sm:min-h-[90vh] flex items-center">
       <div className="absolute inset-0">
-        <RippleGrid
-          gridColor="#c9a84c"
-          rippleIntensity={0.05}
-          gridSize={10}
-          gridThickness={15}
-          fadeDistance={1.5}
-          vignetteStrength={2}
-          glowIntensity={0.1}
-          opacity={1}
-          mouseInteraction={true}
-          mouseInteractionRadius={1}
+        <DotGrid
+          dotSize={5}
+          gap={15}
+          baseColor="#271E37"
+          activeColor="#c9a84c"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />
@@ -58,9 +57,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex-1 relative max-w-[600px] w-full animate-fade-up-delay-2">
-          <div className="absolute -inset-8 bg-gold/10 rounded-full blur-3xl animate-glow-pulse" />
-          <div className="relative animate-float-slow">
+        <div className="flex-1 relative max-w-[400px] lg:max-w-[600px] w-full animate-fade-up-delay-2">
+          <div className="relative">
             <img src="/images/hero-image.png" alt="Trading dashboard" className="w-full h-auto rounded-2xl relative z-10 shadow-2xl shadow-gold/10" />
           </div>
         </div>
