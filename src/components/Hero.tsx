@@ -63,16 +63,6 @@ export default function Hero() {
           <div className="relative animate-float-slow">
             <img src="/images/hero-image.png" alt="Trading dashboard" className="w-full h-auto rounded-2xl relative z-10 shadow-2xl shadow-gold/10" />
           </div>
-          <div className="absolute top-4 right-4 z-20 bg-card/90 backdrop-blur-md border border-border rounded-xl p-3 animate-float">
-            <p className="text-xs text-gray-mid">Your Growth, Our Mission</p>
-            <div className="flex items-center gap-2 mt-1">
-              <span className="text-sm font-medium text-green-400">+65%</span>
-              <span className="text-xs text-gray-mid">ROI Boost</span>
-            </div>
-          </div>
-          <div className="absolute bottom-6 left-4 z-20 bg-card/90 backdrop-blur-md border border-border rounded-xl px-4 py-3 animate-float-slow">
-            <p className="text-sm text-gray-light font-medium">5k+ Success Stories</p>
-          </div>
         </div>
       </div>
     </section>
