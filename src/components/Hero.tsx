@@ -25,7 +25,7 @@ export default function Hero() {
 
       <div className="relative max-w-[1440px] mx-auto px-8 flex flex-col lg:flex-row items-center gap-16 w-full">
         <div className="flex-1 max-w-[562px]">
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-3 mb-8 animate-fade-up">
             <span className="text-sm font-medium text-gray-light">Excellent</span>
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
@@ -38,18 +38,18 @@ export default function Hero() {
             <span className="text-sm font-medium text-gray-light">5-Star Reviews</span>
           </div>
 
-          <h1 className="text-[48px] font-bold leading-tight mb-3">
-            Trusted Since 2016.
+          <h1 className="text-[52px] font-bold leading-tight mb-3 animate-fade-up-delay-1">
+            <span className="shimmer-text">Trusted Since 2016.</span>
           </h1>
-          <h2 className="text-[30px] font-bold leading-snug mb-6 text-gray-light">
+          <h2 className="text-[28px] font-bold leading-snug mb-6 text-gray-light animate-fade-up-delay-2">
             Learn the day trading system that has generated $256K in payouts.
           </h2>
-          <p className="text-base text-gray-mid leading-relaxed mb-10 max-w-[562px]">
+          <p className="text-base text-gray-mid leading-relaxed mb-10 max-w-[562px] animate-fade-up-delay-3">
             Vision FX is a professional trading platform with over 5 years of experience in the financial markets. Join like-minded individuals who follow elite trading signals to create life-changing profits.
           </p>
 
-          <div className="flex items-center gap-4">
-            <a href="#enroll" className="gold-gradient text-black font-medium text-base px-8 py-3.5 rounded-full hover:opacity-90 transition-all hover:scale-105">
+          <div className="flex items-center gap-4 animate-fade-up-delay-4">
+            <a href="#enroll" className="gold-gradient text-black font-medium text-base px-8 py-3.5 rounded-full hover:opacity-90 transition-all hover:scale-105 shadow-[0_0_30px_rgba(201,168,76,0.3)]">
               Enroll Now
             </a>
             <a href="#telegram" className="border border-border text-white font-medium text-base px-8 py-3.5 rounded-full hover:bg-white/5 transition-all hover:scale-105">
@@ -58,8 +58,21 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex-1 relative max-w-[600px] w-full">
-          <img src="/images/hero-image.png" alt="Trading dashboard" className="w-full h-auto rounded-2xl relative z-10" />
+        <div className="flex-1 relative max-w-[600px] w-full animate-fade-up-delay-2">
+          <div className="absolute -inset-8 bg-gold/10 rounded-full blur-3xl animate-glow-pulse" />
+          <div className="relative animate-float-slow">
+            <img src="/images/hero-image.png" alt="Trading dashboard" className="w-full h-auto rounded-2xl relative z-10 shadow-2xl shadow-gold/10" />
+          </div>
+          <div className="absolute top-4 right-4 z-20 bg-card/90 backdrop-blur-md border border-border rounded-xl p-3 animate-float">
+            <p className="text-xs text-gray-mid">Your Growth, Our Mission</p>
+            <div className="flex items-center gap-2 mt-1">
+              <span className="text-sm font-medium text-green-400">+65%</span>
+              <span className="text-xs text-gray-mid">ROI Boost</span>
+            </div>
+          </div>
+          <div className="absolute bottom-6 left-4 z-20 bg-card/90 backdrop-blur-md border border-border rounded-xl px-4 py-3 animate-float-slow">
+            <p className="text-sm text-gray-light font-medium">5k+ Success Stories</p>
+          </div>
         </div>
       </div>
     </section>

@@ -27,8 +27,8 @@ export default function JoinVIP() {
             Enroll Now
           </a>
         </div>
-        <div className="flex-1 max-w-[500px]">
-          <img src="/images/premium-section.png" alt="Premium features" className="w-full rounded-3xl" />
+        <div className="flex-1 max-w-[500px] aspect-square rounded-3xl bg-card border border-border flex items-center justify-center">
+          <img src="/images/hero-image.png" alt="Trading platform" className="w-4/5 rounded-2xl" />
         </div>
       </div>
     </section>
